@@ -223,16 +223,27 @@ input[type=submit] {
 
 #masthead > div > nav {
   float: none;
+  /*trying to center nav*/
+  justify-content: center;
+  position:static;
+}
 }
 
 @media only screen and (min-width:768px) {
 /*for tablets */
 #masthead{
-  float: left;
-  position: static ! important;
-
+  /*unsure how to remove the extra space from static positioning*/
+position:static;
 }
-
-
+}
 @media only screen and (min-width:960px){
 /*for laptops and larger screens*/
+#masthead{
+  position:fixed;
+}
+#main-container{
+  /*trying to add more space to the right...*/
+  margin-right:40px;
+}
+}
+}
